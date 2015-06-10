@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScenarioGenerator> 
+    <Parameters>
+	    <parameter name="ForwardCurveFile" value="ForwardCurve.csv"></parameter>
+	    <parameter name="NumScenario" value="1000"></parameter>
+	    <parameter name="NumStep" value="30"></parameter>
+	    <parameter name="NumYear" value="30"></parameter>
+	    <parameter name="OutputFolder" value="RN"></parameter>
+	    <parameter name="Seed" value="1"></parameter>
+    </Parameters>
+    <Indices>
+        <index name="LargeCapEquity" value="LargeCapEquity.csv"></index>
+        <index name="SmallCapEquity" value="SmallCapEquity.csv"></index>
+        <index name="IntlEquity" value="IntlEquity.csv"></index>
+        <index name="FixedIncome" value="FixedIncome.csv"></index>
+        <index name="Money" value="Money.csv"></index>
+    </Indices>
+    <Volatility>
+        <index name="LargeCapEquity" value="0.1514"></index>
+        <index name="SmallCapEquity" value="0.2052"></index>
+        <index name="IntlEquity" value="0.1705"></index>
+        <index name="FixedIncome" value="0.0429"></index>
+        <index name="Money" value="0.0050"></index>
+    </Volatility>
+    <Correlation> 
+        <pair index1="LargeCapEquity" index2="SmallCapEquity" value="0.7619"></pair>
+        <pair index1="LargeCapEquity" index2="IntlEquity" value="0.5571"></pair>
+        <pair index1="LargeCapEquity" index2="FixedIncome" value="0.2369"></pair>
+        <pair index1="LargeCapEquity" index2="Money" value="-0.0383"></pair>
+        <pair index1="SmallCapEquity" index2="IntlEquity" value="0.4433"></pair>
+        <pair index1="SmallCapEquity" index2="FixedIncome" value="0.1303"></pair>
+        <pair index1="SmallCapEquity" index2="Money" value="-0.0334"></pair>
+        <pair index1="IntlEquity" index2="FixedIncome" value="0.1505"></pair>
+        <pair index1="IntlEquity" index2="Money" value="-0.0347"></pair>
+        <pair index1="FixedIncome" index2="Money" value="0.0360"></pair>
+    </Correlation>
+</ScenarioGenerator> 

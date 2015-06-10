@@ -1,0 +1,135 @@
+Table Name:,1996 IAM - Male
+Table Identity:,1699
+Provider Domain:,soa.org
+Provider Name:,Susie Lee
+Table Reference:,"Robert J. Johansen, “Review of Adequacy of 1983 Individual annuity Mortality Table”, Transactions of the Society of Actuaries Vol. XLVII (1995) Appendix E. Accessed: 04/2013 from http://www.soa.org/Library/Research/Transactions-Of-Society-Of-Actuaries/1990-95/1995/January/tsa95v479.aspx"
+Content Type:,Annuitant Mortality
+Table Description:,1996 Individual Annuity Mortality (IAM) Table – Male. Minimum Age: 5 Maximum Age: 115
+EffDate:,
+Comments:,"Study Data: Current intercompany experience not available thus Improvement Scale G (See SOA Table Identities 908 and 909) applied to update the 1983 Basic Table (See SOA Table Identities 823 and 824) to 1996, the resulting table was graduated to form a 1996 Basic Table (See SOA Tables 1696 and 1697) and then a 10% loading was subtracted. The method was suggested to quickly derive an updated table whose antecedents were known and which reasonably reflects annuitant mortality improvement from 1983 to 1996. Methodology: A set of 1996 basic (unloaded) tables was constructed by applying Scale G improvement rates to the 1983 Basic Tables; then a Jenkins osculatory graduation formula and a cubic curve at the high ages were used to obtain the 1996 Basic Tables. A 10% loading was deducted and the tables re-graduated to produce the final values. The new table could be referred to, if necessary, as a modification of the 1983 Table a (See SOA Table Identities 829 and 830). Data Transcription Errors: None. Data Certified: 04/2013"
+Keywords:,"Aggregate,Annuitant mortality,United States of America"
+
+Table # ,1
+Table Description:,1996 Individual Annuity Mortality (IAM) Table – Male. Minimum Age: 5 Maximum Age: 115
+Nation:,United States of America
+Scaling Factor:,0
+Data Type:,Floating Point
+"Row, Column (if applicable)->id:",Age
+"Row, Column (if applicable)->ScaleType:",Age
+"Row, Column (if applicable)->AxisName:",Age
+"Row, Column (if applicable)->MinScaleValue:",5
+"Row, Column (if applicable)->MaxScaleValue:",115
+"Row, Column (if applicable)->Increment:",1
+
+Row\Column,1
+5,0.000310
+6,0.000288
+7,0.000274
+8,0.000307
+9,0.000335
+10,0.000358
+11,0.000376
+12,0.000392
+13,0.000405
+14,0.000417
+15,0.000427
+16,0.000438
+17,0.000451
+18,0.000465
+19,0.000481
+20,0.000500
+21,0.000520
+22,0.000543
+23,0.000567
+24,0.000593
+25,0.000618
+26,0.000642
+27,0.000664
+28,0.000682
+29,0.000697
+30,0.000709
+31,0.000718
+32,0.000724
+33,0.000729
+34,0.000735
+35,0.000747
+36,0.000770
+37,0.000807
+38,0.000862
+39,0.000937
+40,0.001034
+41,0.001155
+42,0.001301
+43,0.001473
+44,0.001669
+45,0.001887
+46,0.002124
+47,0.002377
+48,0.002643
+49,0.002922
+50,0.003213
+51,0.003516
+52,0.003829
+53,0.004153
+54,0.004487
+55,0.004833
+56,0.005190
+57,0.005560
+58,0.005947
+59,0.006365
+60,0.006834
+61,0.007372
+62,0.007997
+63,0.008728
+64,0.009579
+65,0.010564
+66,0.011696
+67,0.012989
+68,0.014456
+69,0.016096
+70,0.017913
+71,0.019903
+72,0.022068
+73,0.024414
+74,0.026967
+75,0.029761
+76,0.032829
+77,0.036205
+78,0.039919
+79,0.043993
+80,0.048449
+81,0.053305
+82,0.058582
+83,0.064299
+84,0.070462
+85,0.077080
+86,0.084158
+87,0.091701
+88,0.099715
+89,0.108196
+90,0.117140
+91,0.126540
+92,0.136392
+93,0.146691
+94,0.157432
+95,0.168615
+96,0.180232
+97,0.192282
+98,0.205218
+99,0.219494
+100,0.235563
+101,0.253878
+102,0.274893
+103,0.299061
+104,0.326834
+105,0.358668
+106,0.395014
+107,0.436326
+108,0.483057
+109,0.535662
+110,0.594592
+111,0.660302
+112,0.733244
+113,0.813872
+114,0.902640
+115,1.000000

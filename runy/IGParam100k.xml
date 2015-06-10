@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created on September 18, 2014 by Guojun Gan-->
+<InforceGenerator> 
+	<Parameters>
+		<Parameter name="NumPolicy" value="100000"/>
+		<Parameter name="BirthStartDate" value="01/01/1950"/>
+		<Parameter name="BirthEndDate" value="01/01/1980"/>
+		<Parameter name="IssueStartDate" value="01/01/2000"/>
+		<Parameter name="IssueEndDate" value="01/01/2014"/>
+		<Parameter name="CurrentDate" value="01/01/2014"/>
+		<Parameter name="MinMaturity" value="15"/>
+		<Parameter name="MaxMaturity" value="30"/>
+		<Parameter name="MinAccountValue" value="50000"/>
+		<Parameter name="MaxAccountValue" value="500000"/>
+		<Parameter name="Seed" value="1"/>
+		<Parameter name="FemalePercent" value="0.4"/>
+		<Parameter name="ScenarioFolder" value="aging"/>
+		<Parameter name="FundMapFile" value="FundMap.csv"/>
+        <Parameter name="NumTimeStep" value="30"/>
+		<Parameter name="OutputFile" value="inforce100k.csv"/>
+		<Parameter name="BaseFee" value="200"/>
+	</Parameters>
+	<GuaranteeTypes>
+		<GuaranteeType name="GMDB1"> 
+			<Parameter name="RiderFee" value="20"/> 
+			<Parameter name="RollUpRate" value="0"/> 
+		</GuaranteeType>
+		<GuaranteeType name="GMDB2"> 
+			<Parameter name="RiderFee" value="50"/> 
+			<Parameter name="RollUpRate" value="500"/> 
+		</GuaranteeType>
+		<GuaranteeType name="GMWB1"> 
+			<!-- immediate GMWB -->
+			<Parameter name="RiderFee" value="60"/> 
+			<Parameter name="WithdrawalRate" value="600"/> 
+			<Parameter name="RollUpRate" value="0"/> 
+		</GuaranteeType>
+		<GuaranteeType name="GMWB2"> 
+			<!-- 10-year deferral GMWB roll-up -->
+			<Parameter name="RiderFee" value="50"/>
+			<Parameter name="WithdrawalRate" value="700"/>
+			<Parameter name="RollUpRate" value="500"/> 
+		</GuaranteeType>
+		<GuaranteeType name="GMWB3"> 
+			<!-- 10-year deferral GMWB step-up -->
+			<Parameter name="RiderFee" value="60"/>
+			<Parameter name="WithdrawalRate" value="700"/>
+			<Parameter name="RollUpRate" value="0"/> 
+		</GuaranteeType>
+		<GuaranteeType name="GMMB"> 
+			<Parameter name="RiderFee" value="50"/>
+			<Parameter name="RollUpRate" value="0"/>
+		</GuaranteeType>
+	</GuaranteeTypes>
+	<ProductTypes>
+		<ProductType name="DBRP" rider="GMDB1" value="0.2"/>
+		<ProductType name="DBRU" rider="GMDB2" value="0.2"/>
+		<ProductType name="WB" rider="GMWB1" value="0.2"/>
+		<ProductType name="WBSU" rider="GMWB3" value="0.2"/>
+		<ProductType name="MB" rider="GMMB" value="0.2"/>
+	</ProductTypes>
+	<Funds>
+		<Fund number="1" fee="30"/>
+		<Fund number="2" fee="50"/>
+		<Fund number="3" fee="60"/>
+		<Fund number="4" fee="80"/>
+		<Fund number="5" fee="10"/>
+		<Fund number="6" fee="38"/>
+		<Fund number="7" fee="45"/>
+		<Fund number="8" fee="55"/>
+		<Fund number="9" fee="57"/>
+		<Fund number="10" fee="46"/>
+	</Funds>
+</InforceGenerator>
